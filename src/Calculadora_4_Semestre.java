@@ -327,7 +327,7 @@ public class Calculadora_4_Semestre extends javax.swing.JFrame {
     }//GEN-LAST:event_btNumeroZeroActionPerformed
 
     private void btVezesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVezesActionPerformed
-   valor1 = Double.parseDouble(primeiroOperando);
+  n1 = Double.parseDouble(primeiroOperando);
         jTextaAreaDeSoma.setText(primeiroOperando = ""); 
         operador = "*";
     }//GEN-LAST:event_btVezesActionPerformed
@@ -341,20 +341,20 @@ public class Calculadora_4_Semestre extends javax.swing.JFrame {
     }//GEN-LAST:event_btVirgulaActionPerformed
 
     private void BtIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtIgualActionPerformed
-      valor2 = Double.parseDouble(primeiroOperando);
+      n2 = Double.parseDouble(primeiroOperando);
         
         switch (operador){
             case "+":
-                resultado = valor1 + valor2;
+                result = n1 + n2;
                 break;
             case "-":
-                resultado = valor1 - valor2;
+                result = n1 - n2;
                 break;
             case "*":
-                resultado = valor1 * valor2;
+                result = n1 * n2;
                 break;
             case "/":
-                resultado = valor1 / valor2;
+                result = n1 / n2;
                 break;
             default:
                 jTextaAreaDeSoma.setText("Esse operador não existe");
@@ -362,17 +362,17 @@ public class Calculadora_4_Semestre extends javax.swing.JFrame {
             
                 if("+".equals(operador)){
                     
-                    resultado = valor1 + valor2;
+                    result = n1 + n2;
                 }
                 if ("-".equals(operador)){
-                    resultado = valor1 - valor2;
+                    result = n1 - n2;
               
                 }
                 if ("/".equals(operador)){
-                    resultado = valor1 / valor2;
+                    result = n1 / n2;
                 }
                 if ("*".equals(operador)){
-                    resultado = valor1 * valor2;
+                    result = n1 * n2;
                 }
                 
                 else {
@@ -381,7 +381,7 @@ public class Calculadora_4_Semestre extends javax.swing.JFrame {
                 
         }
         
-        jTextaAreaDeSoma.setText(primeiroOperando = String.valueOf(resultado));
+        jTextaAreaDeSoma.setText(primeiroOperando = String.valueOf(result));
         btMais.setBackground(getBackground());
         btMenos.setBackground(getBackground());
         btVezes.setBackground(getBackground());
@@ -389,7 +389,7 @@ public class Calculadora_4_Semestre extends javax.swing.JFrame {
     }//GEN-LAST:event_BtIgualActionPerformed
 
     private void btDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btDividirActionPerformed
-       valor1 = Double.parseDouble(primeiroOperando);
+       n1 = Double.parseDouble(primeiroOperando);
         jTextaAreaDeSoma.setText(primeiroOperando = ""); 
         operador = "/";
     }//GEN-LAST:event_btDividirActionPerformed
@@ -399,13 +399,13 @@ public class Calculadora_4_Semestre extends javax.swing.JFrame {
     }//GEN-LAST:event_btExcluirActionPerformed
 
     private void btMaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMaisActionPerformed
-       valor1 = Double.parseDouble(primeiroOperando);
+       n1 = Double.parseDouble(primeiroOperando);
         jTextaAreaDeSoma.setText(primeiroOperando = ""); 
         operador = "+";
     }//GEN-LAST:event_btMaisActionPerformed
 
     private void btMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMenosActionPerformed
-        valor1 = Double.parseDouble(primeiroOperando);
+        n1 = Double.parseDouble(primeiroOperando);
         jTextaAreaDeSoma.setText(primeiroOperando = ""); 
         operador = "-";
     }//GEN-LAST:event_btMenosActionPerformed
