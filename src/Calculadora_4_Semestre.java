@@ -21,9 +21,9 @@ public class Calculadora_4_Semestre extends javax.swing.JFrame {
     String segundoOperando = "";
     String operador = "";
     
-    double valor1 = 0;
-    double valor2 = 0;
-    double resultado;
+    double n1 = 0;
+    double n2 = 0;
+    double result;
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
