@@ -395,7 +395,7 @@ public class Calculadora_4_Semestre extends javax.swing.JFrame {
     }//GEN-LAST:event_btDividirActionPerformed
 
     private void btExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExcluirActionPerformed
-        // TODO add your handling code here:
+        jTextaAreaDeSoma.setText(primeiroOperando = "");
     }//GEN-LAST:event_btExcluirActionPerformed
 
     private void btMaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMaisActionPerformed
